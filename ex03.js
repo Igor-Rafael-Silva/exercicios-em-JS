@@ -1,0 +1,12 @@
+
+const prompt = require('prompt-sync')();
+
+console.log("--- Conversor: Fahrenheit para Celsius ---");
+
+let fahrenheit = Number(prompt("Digite a temperatura em Fahrenheit: "));
+
+
+let celsius = (fahrenheit - 32) * (5 / 9);
+
+
+console.log(`${fahrenheit}°F convertido para Celsius é: ${celsius.toFixed(2)}°C`);
