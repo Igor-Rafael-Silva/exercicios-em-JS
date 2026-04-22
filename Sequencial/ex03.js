@@ -1,7 +1,7 @@
 
 const prompt = require('prompt-sync')();
 
-console.log("--- Conversor: Fahrenheit para Celsius ---");
+console.log("--- Conversor: Fahrenheit para graus Celsius ---");
 
 let fahrenheit = Number(prompt("Digite a temperatura em Fahrenheit: "));
 
