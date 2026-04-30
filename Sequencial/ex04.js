@@ -1,10 +1,9 @@
 
 const prompt = require('prompt-sync')();
 
-console.log("--- Cálculo do Volume da Lata de Óleo ---");
+console.log("--- Cálculo de Combústivel Gasto ---");
 
-let raio = Number(prompt("Digite o raio da base (cm): "));
-let altura = Number(prompt("Digite a altura da lata (cm): "));
-let volume = Math.PI * (raio ** 2) * altura;
-
-console.log(`O volume da lata de óleo é: ${volume.toFixed(2)} cm³`);
+let distancia = Number(prompt("Digite a distancia percorrida em km : "));
+let consumo = Number(prompt("Digite o consumo em Km :")); 
+const litros = distancia / consumo ; 
+console.log(`a quantidade de combustivel gasta na viagem é de ${litros} litros.`);

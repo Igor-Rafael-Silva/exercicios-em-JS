@@ -1,12 +1,10 @@
 
 const prompt = require('prompt-sync')();
 
-console.log("--- Conversor: Fahrenheit para Celsius ---");
+console.log("--- Cálculo do Volume da Lata de Óleo ---");
 
-let fahrenheit = Number(prompt("Digite a temperatura em Fahrenheit: "));
+let raio = Number(prompt("Digite o raio da base (cm): "));
+let altura = Number(prompt("Digite a altura da lata (cm): "));
+let volume = Math.PI * (raio ** 2) * altura;
 
-
-let celsius = (fahrenheit - 32) * (5 / 9);
-
-
-console.log(`${fahrenheit}°F convertido para Celsius é: ${celsius.toFixed(2)}°C`);
+console.log(`O volume da lata de óleo é: ${volume.toFixed(2)} cm³`);
